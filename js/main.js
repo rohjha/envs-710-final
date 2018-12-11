@@ -82,11 +82,6 @@ svg.selectAll("path")
     .attr("d", path)
     .attr("width", "50%")
     .style("stroke", "#fff")
-    .style("fill-opacity", function(d) {
-        if (name == "Grant" || name == "Franklin" || name == "Adams") {
-            return 1;
-        }
-    })
     .style("stroke-width", "1")
 	.style("fill", function(d) {
         if (d.properties.NAME == "Grant" || d.properties.NAME == "Franklin" || d.properties.NAME == "Adams") {
@@ -113,7 +108,7 @@ function handleClick(input)
 
     if (selected != null)
     {
-        d3.select("." + convertName(selected)).style("fill-opacity", "1");
+        d3.select("." + convertName(selected)).style("fill-opacity", null);
     }
 
     chartName = "";
