@@ -1,3 +1,5 @@
+Built to accompany a paper about Kurt Cobain and the timber industry, written for Prof. Bathsheba Demuth's class at Brown
+
 ## Acknowledgments
 Substantial help and code snippets from the following.
 
